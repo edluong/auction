@@ -8,6 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+//Root App
 var AuctionApp = function (_React$Component) {
     _inherits(AuctionApp, _React$Component);
 
@@ -34,6 +35,10 @@ var AuctionApp = function (_React$Component) {
 
 ;
 
+// Display Component
+// This will display the Auction amounts on the screen
+// This will be displayed in a list form, with latest bid on the screen first
+
 var Display = function (_React$Component2) {
     _inherits(Display, _React$Component2);
 
@@ -59,6 +64,9 @@ var Display = function (_React$Component2) {
 
 ;
 
+// Input Component
+// This is used to have the user enter their name and dollar amount
+
 var Input = function (_React$Component3) {
     _inherits(Input, _React$Component3);
 
@@ -81,5 +89,8 @@ var Input = function (_React$Component3) {
 
     return Input;
 }(React.Component);
+
+// Render the Auction App on to the app div
+
 
 ReactDOM.render(React.createElement(AuctionApp, null), document.getElementById('app'));

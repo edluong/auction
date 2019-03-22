@@ -1,3 +1,4 @@
+//Root App
 class AuctionApp extends React.Component{
     render(){
         return (
@@ -9,6 +10,9 @@ class AuctionApp extends React.Component{
     }
 };
 
+// Display Component
+// This will display the Auction amounts on the screen
+// This will be displayed in a list form, with latest bid on the screen first
 class Display extends React.Component{
     render() {
         return (
@@ -19,6 +23,8 @@ class Display extends React.Component{
     }
 };
 
+// Input Component
+// This is used to have the user enter their name and dollar amount
 class Input extends React.Component{
     render() {
         return (
@@ -29,6 +35,5 @@ class Input extends React.Component{
     }
 }
 
-
-
+// Render the Auction App on to the app div
 ReactDOM.render(<AuctionApp />, document.getElementById('app'));
